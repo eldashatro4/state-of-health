@@ -1,4 +1,6 @@
-# Understanding Chronic Diseases Across U.S. States
+# State of Health
+
+### Mapping the Socioeconomic Drivers of Chronic Disease Across U.S. States
 
 **CS 483 Course Project — Team: Healthcare**
 
@@ -45,7 +47,7 @@ Data dictionaries for all three datasets are in `data_dictionaries/`.
 ## Repository Structure
 
 ```
-ProjectCS483/
+state-of-health/
 ├── data/
 │   ├── ACS_2016_2020.csv          # ACS socioeconomic features by state
 │   └── sahie_combined.zip         # SAHIE health insurance estimates (zipped CSV)
@@ -63,8 +65,8 @@ ProjectCS483/
 
 ```bash
 # Clone the repository and enter it
-git clone <repo-url>
-cd ProjectCS483
+git clone https://github.com/eldashatro4/state-of-health.git
+cd state-of-health
 
 # Create and activate a virtual environment
 python3 -m venv .venv
