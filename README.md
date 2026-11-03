@@ -92,5 +92,5 @@ python main.py
 ## Team Process
 
 - **Development model:** Agile/Scrum
-- **Project management:** Jira
+- **Project management:** Jira: https://cs483project.atlassian.net/jira/software/projects/SCRUM/boards/1?filter=&groupBy=none
 - **Version control:** Git/GitHub
