@@ -33,6 +33,8 @@ We combine state-level chronic disease indicators with supplementary data on inc
 - **Small Area Health Insurance Estimates (SAHIE)**: `data/sahie_combined.zip` (contains `sahie_combined.csv`, about 400 MB once unzipped)
   Yearly estimates of health insurance coverage (insured and uninsured counts and percentages) by state and county, broken down by age, race, sex, and income-to-poverty ratio.
   Source: https://www.census.gov/programs-surveys/sahie.html
+- **US State Boundaries**:
+  Source: https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html
 
 Data dictionaries for all three datasets are in `data_dictionaries/`.
 
