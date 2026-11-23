@@ -35,6 +35,8 @@ We combine state-level chronic disease indicators with supplementary data on inc
   Source: https://www.census.gov/programs-surveys/sahie.html
 - **US State Boundaries**:
   Source: https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html
+- **US State Populations**:
+  Source: https://www.census.gov/newsroom/press-kits/2019/national-state-estimates.html
 
 Data dictionaries for all three datasets are in `data_dictionaries/`.
 
