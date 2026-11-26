@@ -26,7 +26,7 @@ To understand the distribution of the data and identify outliers we used box plo
 ![Boxplots 1](./project_boxplot.png)
 ![Boxplots 1](./project_boxplot2.png)
 
-The boxplot implementation we used identifies any outliers as separate points, and here we can see there are no outliers. If we were to find any outliers, we would choose to keep them in the dataset. On small samples of only 50 states, such outliers would be statistically significant and could lead us to understanding the factors that contribute to such an extremely different statistic.
+The boxplot implementation we used identifies any outliers as separate points, and here we can see there are no outliers in most of the columns. If we were to find any outliers, we would choose to keep them in the dataset. On small samples of only 50 states, such outliers would be statistically significant and could lead us to understanding the factors that contribute to such an extremely different statistic. We do notice that states of Utah and Wisconsin are outliers, having lowest and highest alcohol issues across all states. Similarly, the states of Colorado, Utah and Wyoming have the lowest diabetes rate, among all the 50 states. We use the 1.5*IQR formula to detect outliers.
 
 Some interesting observations from these box plots are the difference in ranges between dental visits and asthma. Dental visits are surely impacted greatly by economic factors which we will try to understand more through the machine learning portions of the project. However, it is quite surprising that asthma is a seemingly steady statistic across state lines, especially when smoking also seems to have a large range. The minimal differences in asthma is important to note for when we move on to the machine learning portion.
 
