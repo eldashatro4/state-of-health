@@ -26,7 +26,7 @@ To understand the distribution of the data and identify outliers we used box plo
 ![Boxplots 1](./project_boxplot.png)
 ![Boxplots 1](./project_boxplot2.png)
 
-The boxplot implementation we used identifies any outliers as separate points, and here we can see there are no outliers in most of the columns. If we were to find any outliers, we would choose to keep them in the dataset. On small samples of only 50 states, such outliers would be statistically significant and could lead us to understanding the factors that contribute to such an extremely different statistic. We do notice that states of Utah and Wisconsin are outliers, having lowest and highest alcohol issues across all states. Similarly, the states of Colorado, Utah and Wyoming have the lowest diabetes rate, among all the 50 states. We use the 1.5*IQR formula to detect outliers.
+Using the $1.5 \times \text{IQR}$ rule, our box plots identify outliers as separate points beyond the whiskers. Most of the selected indicators show no extreme outliers across the 50 states, with a few notable exceptions: Utah and Wisconsin appear as outliers on the low and high ends of alcohol-related rates, respectively, while Colorado, Utah, and Wyoming fall at the low end of diabetes rates. Rather than removing these states, we retain them in our dataset because, in a small sample of 50 states, extreme observations carry meaningful signal and can help reveal regional or socioeconomic factors driving unusual health outcomes.
 
 Some interesting observations from these box plots are the difference in ranges between dental visits and asthma. Dental visits are surely impacted greatly by economic factors which we will try to understand more through the machine learning portions of the project. However, it is quite surprising that asthma is a seemingly steady statistic across state lines, especially when smoking also seems to have a large range. The minimal differences in asthma is important to note for when we move on to the machine learning portion.
 
@@ -36,6 +36,11 @@ We were also interested in the relationships between different variables, partic
 ![Scatter 2](./project_smokers_dentists.png)
 
 Surprisingly, there is seemingly no relationship between smoking and asthma. Even though the range of asthma's distribution was quite small, we expected it to be tied to smoking in some way and this is clearly not backed up by the data. On the other hand, it seems that smoking and dental visits are negatively correlated. We are interested in exploring this correlation more in the machine learning portion, and we will try to find any underlying features that may explain this trend.
+
+Furthermore, we examined whether chronic conditions (diabetes and mental health) correlate with self-care and preventive behaviors (immunization and alcohol use) across states. To evaluate these pairwise relationships, we generated scatter plots and fitted linear regression lines of best fit for all six feature combinations. Across every pair, the $p$-value remains above $0.05$ and $R^2$ ranges from $0.017$ (mental health vs. immunization) to $0.066$ (diabetes vs. immunization), indicating very weak and statistically non-significant linear relationships when averaged at the state level. Rather than suggesting these factors are unrelated, the low $R^2$ scores likely reflect underlying confounding variables—such as income, insurance coverage, or age demographics—or non-linear patterns that we will investigate further using our supplementary ACS and SAHIE datasets in the clustering and regression stages.
+
+![Scatter 3](./project_dia_imm.png)
+![Scatter 4](./project_men_imm.png)
 
 ## Work Division
 
