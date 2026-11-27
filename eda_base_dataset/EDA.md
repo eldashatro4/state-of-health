@@ -51,3 +51,5 @@ For the base dataset, Saifullah and Advait split the workload. They worked toget
 Below are screenshots of Spark execution DAGs from the notebooks in which we executed our code on Databricks.
 ![Spark DAG 1](./spark_dag_1.png)
 ![Spark DAG 2](./spark_dag_2.png)
+![Spark DAG 3](./spark_dag_3.png)
+
